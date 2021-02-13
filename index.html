@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./chat-solid-24.ico">
+    <title>Chat</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script> -->
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCmnWYLC5Dc82W4PP46XvW5MDFLNMEYJwM",
+          authDomain: "chat-3ba2b.firebaseapp.com",
+          databaseURL: "https://chat-3ba2b-default-rtdb.firebaseio.com",
+          projectId: "chat-3ba2b",
+          storageBucket: "chat-3ba2b.appspot.com",
+          messagingSenderId: "842748218562",
+          appId: "1:842748218562:web:aaa24af2ad09a9670cff5b"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- <script src="/__/firebase/8.2.4/firebase-app.js"></script>
+    <script src="/__/firebase/8.2.4/firebase-auth.js"></script>
+    <script src="/__/firebase/8.2.4/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script> -->
+    
+
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand fs-5" id="nombreusuario">Chat</span>
+            <div id="botones">
+                
+            </div>
+        </nav>
+        <main id = "contenidoProtegido" class = "mt-3" style="height: 80vh; overflow-y: scroll;">
+        
+        </main>
+        
+        <form class = 'input-group py-3 fixed-bottom container' id="formulario">
+          <input type="text" class="form-control fs-5" placeholder="Enviar mensaje" id = inputchat>
+          <div class="input-group-append ">
+            <button class="btn btn-success fs-5" type="submit">Enviar</button>
+          </div>
+        </form>
+    </div>
+
+    
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
